@@ -1,0 +1,1186 @@
+CHANGELOG:
+
+06/29/2016 - 1928 Sets
+
+Side by Side 2 (sidebs2) had new parent - took in account romset changes.
+Data Sync for 0.175
+
+
+05/25/2016 - 1928 Sets
+
+Added:
+Bang Bang Busters (2010 NCI release) (b2b) to Neo Geo driver
+Idol Mahjong Final Romance 2 (Neo-Geo, bootleg of CD version) (froman2b) to Neo Geo driver
+Last Hope (bootleg AES to MVS conversion, no coin support) (lasthope) to Neo Geo driver
+Metal Freezer (metlfrzr) to Panic Road driver
+Pokonyan! Balloon (Japan 940322) (pokonyan) to CPS-1 driver
+
+Block Block new parent, rename (block -> blockr2)
+Description Fix, rename (mosyougi -> moshougi)
+
+Data Sync to 0.174
+
+
+01/27/2016 - 1923 Sets
+
+Data Sync to 0.170
+
+
+11/25/2015 - 1923 Sets
+
+Added Outrun Enhanced Edition (outruneh)
+Data sync to 0.168
+
+
+10/28/2015 - 1922 Sets
+
+Air Duel new parent, rename (airduel -> airduelm72)
+Ken Go new parent, rename (keogo -> ltswords)
+
+Data Sync to 0.167
+
+
+09/30/2015 - 1922 Sets
+Added Ultimate Mortal Kombat 3 (Arcade) thanks to teknomedic for the heads up.
+
+Data Sync to 0.166
+
+
+08/26/2015 - 1921 Sets
+
+Data Sync to 0.165
+
+
+07/30/2015 - 1921 Sets
+
+bublbob2 - changed parent roms to latest dump
+Data Sync to 0.164
+
+
+06/24/2015 - 1921 Sets
+
+Corrected issue with seibuSPI games and cleared the SHA1 out.  Somewhere along
+the line it got "0" filled and it would no longer load.  If you don't have an
+older MAME with the merged .nv of a successful initialization for the SeibuSPI
+games, you can use the current MAME's file output in the nvram\(setname) and
+merge the file back together.  Unforunately, the M1 Core is rigid and will only
+work properly with an all-inclusive .NV file.  So, in windows:
+
+copy /b ds2404. + soundflash1. + soundflash2. = (setname).nv
+
+There are 5 total sets now for Seibu SPI:
+rfjet
+rfdt
+rfdtj *newly added*
+viprp1
+viprp1j
+
+Wizard Fire and Dark Seal 2 (wizdfire, darkseal2) both have redumped sample roms.
+
+Data sync to 0.163
+
+
+06/05/2015 - 1920 Sets
+
+Fixed error with diggerman size was 64k should have been 128k (thanks to Dahao Liao)
+Stadium Cross - new sample roms for parent replaced (2 x 1024k sized).
+Psychic 5 - new parent cpu/sound rom
+
+Data sync to 0.162
+
+
+03/03/2015
+
+Data Sync to 0.159
+
+
+12/21/2014 - 1920 Sets
+
+Data Sync to 0.157
+
+
+11/26/2014 - 1920 Sets
+
+Changed:
+slyspy -> secretag (new parent set)
+
+Data Sync to 0.156
+
+
+10/16/2014 - 1920 Sets
+
+Added:
+Ken Sei Mogura to CPS-1 Driver - Thanks to Soregashi!
+
+Changed:
+Had to set up Namco NA 1/2 and Some Namco S22 games with fake parents
+since device MCU's were set up.  (namcoc69, namcoc70, namcoc74).
+These Sets include:
+bkrtmaq, cgangpzl, exvania, fghtatck, swcourt, tinklpit = namcoc69
+emeralda, knckhead, numanath, quiztou, xday2 = namcoc70
+acedrvrw, cybrcomm, ridgerac, ridgera2, victlapw = namcoc74
+
+NOTE: Set "ridgeracf" requires manual addition of "namcoc74" romset
+inside if you wish to use since it already has a parent in "ridgerac".
+It is either do that, or drop from M1 list.
+
+ssf2 - changed audio cpu rom
+
+Data Sync to MAME 0.155
+
+
+7/25/2014 - 1919 Sets
+puzldama  ->  crzcross
+stwr_103  ->  stwr_104
+
+Data Sync to MAME 0.154
+
+
+4/8/2014 - 1919 Sets
+Diggerman - changed m1 rom
+waveshrk  ->  jetwave
+getstar   ->  grdians
+
+Data Sync to MAME 0.153
+
+
+12/24/2013 - 1919 Sets
+Data Sync to MAME 0.152
+
+
+10/5/2013 - 1919 Sets
+Correct to size in pang3 of audiocpu rom.  It had passed my BridgeM1 audit
+for some reason so it was presumed good.
+
+
+9/20/2013 - 1919 Sets
+Changed roms in the following sets:
+manxtt and truxton
+
+Data sync to MAME 0.150 Romsets
+
+
+6/11/2013 - 1919 Sets
+A number of sets had changed roms including:
+arkretrn, sidebs, superchs, wwfsstars
+
+Data sync to MAME 0.149
+
+
+1/14/2013
+strider2 - changed Qsound rom, but as a result M1 was unable to produce sound
+with it.  So, using the old romset, the 4mb sound rom should be in a romset
+called "strider2osr".  The normal MAME strider2 will have the cpurom needed.
+
+scfinals, qadj and qtono2j all showed rom changes.
+
+0.148 Data Sync
+
+
+11/26/2012 - 1919 Sets
+Final Furlong renamed (finlflng -> finfurl)
+
+0.147u3 Stat Sync
+
+
+9/17/2012 - 1919 Sets
+Raiden DX renamed (raidndx -> raidendx)
+
+0.147 Data Sync
+
+
+8/20/2012 - 1919 Sets
+Added Last Survivor (lastsurv) to Sega x Board driver.  It may need more work.
+
+0.146u5 Data Sync
+
+
+7/17/2012 - 1918 Sets
+Changed set raiden -> raidenb due to M1 only supporting playing the 
+unencrypted sound rom, which is now "raidenb", with raiden also needed
+as a parent for the universal "OKI" sample rom.
+
+0.146u3 Data Sync
+
+
+6/15/2012 - 1918 Sets
+manxtt - changed audiocpu and 1 sample rom to match parent change.
+
+0.146u1 Data Sync
+
+
+5/21/2012 - 1918 Sets
+Simply a maintenence release to data sync to MAME 0.146.
+No adds or renaming should be needed.
+
+
+3/14/2012 - 1918 Sets
+A bit time between releases - sorry for the delay.  Thanks to a contribution from
+Valley Bell, we have a couple new sets!
+
+Fixed:
+dynabb -> dynabb97 - setname change
+winrun -> winrungp - setname change
+orunners - Normalized sample region size to match rest that use that driver [Valley Bell]
+
+Added:
+dynabb (Dynamic Baseball) to the Model 2A/2B/2C Driver - new parent
+winrun (Winning Run) to the Namco System 21 (type B) Driver -  new parent
+sonic (SegaSonic The Hedgehog (Japan, rev. C)) to the System 32 Driver. [Valley Bell]
+sonicp (SegaSonic The Hedgehog (Japan, prototype)) to the System 32 Driver. [Valley Bell]
+
+Data Sync to MAME 0.145u4
+
+
+1/10/2012 - 1914 Sets
+Fixed:
+strider2, pang3 - new parents
+rainbow -> rbisland - setname change
+bubsys (Bubble System BIOS) was still using the older pre-MAME romset.
+Changed to match MAME current
+
+Data Sync to MAME 0.144u5
+
+
+12/05/2011 - 1914 Sets
+Fixed:
+raiden2 - I had the wrong roms attached (program rather than OKI) so the
+samples were not playing correctly.  Thanks Knurek for the heads-up.
+
+Data Sync to MAME 0.144u2
+
+
+10/27/2011 - 1914 Sets
+Added:
+Alpha Mission II / ASO II - Last Guardian (prototype) to the Neo Geo driver.
+Burning Fight (prototype) to the Neo Geo driver.
+Choutetsu Brikin'ger - Iron clad (Prototype) to the Neo Geo driver.
+
+Fixed:
+gunbustr (Gun Buster) a27-20.bin -> a27-27.bin
+
+Data Sync to 0.143u9
+
+
+10/11/2011 - 1911 Sets
+Changed:
+neomrdo - redumped/confirmed M1 rom
+
+Data sync to 0.143u7
+
+
+9/21/2011 - 1911 Sets
+Added:
+ctcheese (Cut The Cheese (Redemption)) to the Tattoo Assassins driver.
+
+Fixed:
+exvania (new parent and main cpu roms), pgoal (merged M1 rom), pulstar (redumped V1 rom)
+
+Changed:
+rrf > ridgeracf (new setname)
+
+Data sync to 0.143u6
+
+
+8/27/2011 - 1910 Sets
+Changed:
+rambo3 -> rambo3p (new parent, but we are using the previous rom now in MAME as "rambo3p")
+dendeg -> dendego (new setname)
+dendeg2 -> dendego2 (new setname)
+
+Data Sync to 0.143u4
+
+
+7/27/2011 - 1910 Sets
+
+Data Sync to 0.143u2
+
+
+7/23/2011 - 1910 Sets
+Changed:
+Terra Force romset change
+
+Data Sync to 0.143u1
+
+
+6/5/2011 - 1910 Sets
+Fixed:
+amidar (new parent) and minasan (changed M1 sound rom).
+
+Data Sync to 0.142u5
+
+
+5/9/2011 - 1910 Sets
+Fixed a number of issues related to duplicate filenames, improperly formatted
+or missing entries.  This was causing difficulties when exporting to a CLRMAME
+XML file.
+
+Changed:
+kodure -> kozure (0.142u2)
+ptblank2a -> ptblank2ua (0.142u2)
+
+Data Sync to 0.142u3
+
+
+3/26/2011 - 1910 Sets
+Changed:
+batrid -> batrider
+bkraidu -> bbakraid
+
+New parent sets in 0.141u4:
+shippumd -> kingdmgp 
+mahoudai -> sstriker
+
+Data sync to 0.141u4
+
+
+2/28/2011 - 1910 Sets
+Changed:
+ptblnk2a -> ptblank2a
+moo -> moomesa
+
+Data Sync to 0.141u3
+ 
+
+1/24/2011 - 1910 Sets
+Changed:
+gekirido -> gekiridn - new parent romset in 0.141u1.
+
+Data sync to 0.141u1
+
+
+1/1/2011 - 1910 Sets
+Fixed:
+legion - added a rom which turned out to be a sound rom - adds sound effects!
+
+Data sync to 0.141
+
+
+12/23/2010 - 1910 Sets
+Added:
+Bygone (bygone) to Legend of Kage driver.
+Rumba Lumber (rumba) to Taito Sound Board '84 driver.
+
+Fixed:
+gururin - new m1 sound rom dump (0.140u1)
+
+Data sync to MAME 0.140u3
+
+
+9/23/2010 - 1908 Sets
+Fixed:
+crsword, legendos, sengoku3 - new m1 sound rom dumps.
+
+Data sync to MAME 0.139u3
+
+
+8/12/2010 - 1908 Sets
+Fixed:
+raiden2 - new sound rom dump being used.
+
+Data sync to MAME 0.139u1
+
+
+7/29/2010 - 1908 Sets
+Fixed:
+qtono2 -> qtono2j (Quiz Tonosama no Yabou 2: Zenkoku-ban (Japan 950123)) = setname change.
+Super Dodge Ball (sdodgeb) - new sound rom dump being used.
+Street Hoop (strhoop) - new sound rom dump being used.
+
+Data sync to MAME 0.139.
+
+
+7/9/2010 - 1908 Sets
+Added:
+Chance Kun (chkun) to the Time Pilot driver.
+
+Fixed:
+slapfigh -> alcon (Slapfight/Alcon) to match parent/clone changes in MAME.
+
+Data sync to MAME 0.138u3
+
+
+6/17/2010 - 1907 Sets
+Fixed:
+Point Blank (ptblank) fixed with new c75 data dump (4mb) that matches the parent set.
+
+Data sync to MAME 0.138u2.
+
+
+5/26/2010 - 1907 Sets
+Fixed:
+Wing War (wingwar) adjusted to match the parent clone change in MAME.
+xmultipl -> xmultiplm72 (X Multiply) to match the parent/clone change in MAME.
+
+Multiple descriptions/company names changed to match the data when synced to
+MAME 0.138u1.
+
+
+5/6/2010 - 1907 Sets
+Fixed:
+Vs. Net Soccer (vsnetscr) corrected sample rom to match new dump and fixed playback.
+
+Data synced to MAME 0.137u4.
+
+
+4/8/2010 - 1907 Sets
+Added:
+Crisis Zone (crszone) to the Namco System 12 driver.
+Downhill Bikers (downhill) to the Namco System 12 driver.
+Ridge Racer Full Scale (rrf) to the Namco System 22 driver.
+
+Fixed:
+aircombj -> aircomb (Air Combat) to match parent changes in MAME.
+
+Data synced to MAME 0.137u2.
+
+
+3/11/2010 - 1904 Sets
+Added:
+Gunmen Wars (gunwars) to the Namco System 12 driver.
+
+Changed:
+jetwave -> waveshrk (Jet Wave to Wave Shark)
+
+Data synced to MAME 0.137 romsets.
+
+
+3/5/2010 - 1903 Sets
+
+Added:
+The Ocean Hunter (oceanhun) to the Model 3 driver.
+Who Dunnit (Germany) (wd_12g) to the Midway Digital Compressed Sound (DCS) driver.
+Monopoly (Coin Dropper) (monopred) to the Tattoo Assassins driver.
+Wack-A-Doodle-Doo (Redemption) (wackadoo) to the Tattoo Assassins driver.
+machinaZIOS Virtual Training Center (pinball) to Gottlieb System 3 driver. (basically
+      Shaq Attack with different sample roms resulting in a slightly different sound)
+
+Changed:
+laguns -> lamachin (LA Machineguns) is now a set in MAME and doesn't need a separate
+rom as before.
+
+Various game data changes to match 0.136u4.
+
+
+2/16/2010 - 1898 Sets
+
+Added:
+Codename: Blut Engel (cnbe) to the Neo Geo driver.  This homebrew Neo Geo CD-based game
+has no music, but some sound/voice effects from the game might be of interest.
+
+Changed:
+A number of Namco System 22 games now need a new fake parent because the official MAME
+roms now include the c76.bin data rather than the old 'pr1data.8k'.  All those sets
+which formerly had a fake parent of TEKKEN now have this new fake parent, PROPCYCL.  If
+you want to run any of the sets below from the current MAME romset, you'll need at the
+very least PROPCYCL, or a zip file with that name containing the old PR1DATA.8K file.
+Like before, this will be taken off once the M1 core is updated to support the new .BIN
+file(s).  As a result, I took one set out which only has a changed music program, but
+the music is the same for Soul Edge (souledge1) since a game cannot have more than 1
+parent to provide roms.  It will return once the c76.bin support is added to the M1 core.
+
+Sets with this new fake parent include: danceyes, dunkmnia, finalapr, gslgr94j, gslgr94u,
+gslugrsj, machbrkr, myangel3, nebulray, outfxies, pocketrc, primglex, ptblank, ptblnk2a,
+souledge, speedrcr, starswep, sws95, tekken, tekken2, vshoot, xevi3dg
+
+gokuparo -> fantjour (Fantastic Journey is now considered the parent rom, with Gokujou
+Parodius (gokuparo) now placed as a clone).
+
+indy500 had rom changes in MAME 0.136u3
+
+
+1/21/2009 - 1898 Sets
+
+Changed:
+megab to megablst (Mega Blast (World)) in MAME 0.136u1.
+
+Updated assorted changes to keep current to MAME 0.136u1
+
+
+12/31/2009 - 1898 Sets
+
+Added:
+finlflng (Final Furlong) to the Namco System 12 driver.
+
+Changed:
+combasc to combatsc (Combat School).
+
+Sets should be current to MAME 0.136
+
+
+11/20/2009 - 1897 Sets
+
+Added:
+joyman (Joyman) and ctrpllrp (Caterpiller Pacman Hack) to the Pacman driver.  Both games
+offer some unique tunes not found in normal Pac-Man sets.
+
+Updated assorted changes to keep current to MAME 0.135u1
+
+
+11/02/2009 - 1895 Sets
+
+Changed: sdgndmrb to grainbow (SD Gundam Sangokushi Rainbow Tairiku Senki) in MAME 0.135.
+
+
+10/04/2009 - 1895 Sets
+
+Changed:
+nrallyx to nrallyxb (New Rally X).  The new parent set for whatever reason does not work
+with current M1 driver.  I hooked up this other set (which was nrallyx before 0.134u2) for
+use in M1.
+
+Updated romnames/descriptions to match MAME 0.134u2.
+
+
+9/28/2009 - 1895 Sets
+
+Fixed:
+androdun (Andro Dunos) and exzisus (Exzisus) to match roms used in MAME 0.134u1.
+
+
+9/17/2009 - 1895 Sets
+
+Fixed:
+mk3 (Mortal Kombat 3).  Got proper sound rom requiring a change in the XML in MAME
+0.133u4.  This was due to a compiler bug which I worked around to not miss anything
+from the initial M1.XML read.
+
+Changes:
+Updated data to MAME 0.134
+
+
+8/20/2009 - 1895 Sets
+
+Added:
+dirtdash (Dirt Dash) to the Namco Super System 22 Driver.  This set was added to
+MAME in 0.133u3.  There is some oddness and distortion in some tracks which might be
+dump and/or emulation related issues.
+
+Changes:
+Updated data to MAME 0.133u3.
+
+Rewrote my XML/DATA comparison checking programs to be faster to update as well as
+include the HAZEMD items (which the Genesis/Megadrive Information comes from).
+This information should be correct.
+
+Renamed:
+cuebrckj > cuebrickj to keep in line with MAME.
+
+
+8/3/2009 - 1894 Sets
+
+Added:
+ngfrog (Frog Feast) to the Neo-Geo driver.  There is only one music track, which is the
+default track.
+
+Changes:
+Updated data to MAME 0.133u1.  This included a large amount (nearly 1000) of setname
+changes in MAME involving clone sets.  This had an effect on a couple dozen playable sets
+in M1, which the names now reflect the new setnames MAME expects.  The renames are
+mentioned below:
+
+aceattaa > aceattaca
+airbusb  > airbustrb
+aliensy2 > aliensyn2
+arknid2j > arknoid2j
+arknid2u > arknoid2u
+buggybjr > buggyboyjr
+cosmognj > cosmogngj
+cyberb2p > cyberbal2p
+darksel2 > darkseal2
+dbreed72 > dbreedm72
+fantzon1 > fantzone1
+lifefrcj > lifefrcej
+locklodu > lockloadu
+marvlanj > marvlandj
+pacmanij > pacmaniaj
+pbobbl2o > pbobble2o
+souledgb > souledge1
+stridrua > striderua
+terracra > terracren
+terracrb > terracrea
+thnderxa > thunderxa
+twotigrc > twotigerc
+
+
+7/10/2009 - 1893 Sets
+
+Added:
+polynetw (Polynet Warriors) to the Mystic Warrior driver.  There might be some issues with
+the driver as there are tracks which end abruptly (#154 for instance).
+
+pacwc90 (Pac-Man (on Tecmo World Cup '90 Hardware)) to the World Cup '90 driver.
+This game, which was coded by a MAMEDEV member nearly 10 years ago (Mike Coates), was
+recently mentioned so I dropped into the driver.
+
+Updated data to MAME 0.132u4
+
+
+7/04/2009 - 1891 Sets
+
+Added:
+magtruck (Magical Truck Adventure) to the Model 3 driver.  The percussion sounds a bit
+too white noisy, but otherwise a some fine sounding music!
+
+Changes:
+minasan (Minnasanno Okagesamadesu) due to changed 027-m1.bin.
+Data synced up with MAME 0.132u3
+
+
+6/29/2009 - 1890 Sets
+
+Added:
+hangplt (Hang Pilot) to the GTI Club driver (Phil Bennett)
+
+Assorted romname changes to sync up with MAME 0.132u2
+
+
+5/09/2009 - 1889 Sets
+
+Added:
+STRAX_P7 - (Star Trax (Prototype) Pinball) to the Williams Y-Unit CVSD Driver.
+TOKYOWAR - (Tokyo Wars) to the Namco Super System 22 Driver (R. Belmont)
+AQUAJET - (Aqua Jet) to the Namco Super System 22 Driver (R. Belmont)
+PANICPRK - (Panic Park) to the Namco System 12 Driver (Phil Bennett)
+BINGOC - (Bingo Circus) to the System 16 (sound type 1) Driver.  Current driver
+is unable to play the samples, but the FM is heard just fine using this driver.
+Thanks go to Kale for pointing this set out.
+
+Changed:
+NOBB to NOB (Noboranka (Japan)).  In MAME 0.131u1, there were some changes to the
+sets bringing the audio rom to the parent.  The XML followed suit by using the
+parent instead.
+
+
+4/26/2009 - 1884 Sets
+
+Changed:
+HEAVYUNT to the mame setname that was recently added, HVYUNIT.
+A lot of game year entries were corrected taking information from MAME 0.131.
+
+
+4/17/2009 - 1884 Sets
+
+Added:
+XSEDAE (X Se Dae Quiz) to the Raiden II driver.
+BADLANDS (Bad Lands) to the JSA-1 driver.  Not sure how I missed this for so long!
+
+Changed:
+CAMLTRY (Camel Try) - Name changed in 0.130u4 to CAMELTRYA, reflected in the XML.
+
+
+4/10/2009 - 1882 Sets
+
+Added:
+COUNTRYC (Country Club) to the Psycho Soldier driver.
+SCOTRSHT (Scooter Shooter) to the Iron Horse driver.
+
+Changed:
+CHPLFT (Choplifter) - Name changed in 0.130u3 to CHOPLIFT and this is now reflected in XML.
+
+Fixed:
+FRANKST (Mary Shelley's Frankenstein).  The sound rom mapping was incorrect and caused
+incorrect music playback.
+
+Trimmed a number of "offset=" settings of unneeded 0's.  Also, again cleaned up any
+forgotten "region=" tags that might have been left in.
+
+
+4/2/2009 - 1880 sets
+
+Added:
+CAMLTRYA (Cameltry - YM2203+M6295).  This is a different sound hardware than the parent
+set and was added to the Hit The Ice Driver.
+
+DKGENSAN (Daiku No Gensan (Japan)) to the Item M Series Driver.  This is the Japanese
+version of Hammerin' Harry and has some unique voices.
+
+DOGOSOKE (Dogou Souken) to the Psycho Soldier Driver.  Japanese version of Victory
+Road with unique voice samples.
+
+SCOBRAS (Super Cobra - Stern License) to Scramble/Super Cobra Driver.  It's odd that the
+main set, scobra, doesn't have the opening fanfare after the intro one, like all the clones
+and home ports do.
+
+
+3/20/2009 - 1876 Sets
+
+Added:
+REALPNCH (Real Puncher) to the Taito AIR/B/Dual28k/H/F2 System Driver.  Thanks to Phil B.
+for the heads-up on this one.
+
+Changes:
+CYBERLIP had rom changes in 0.130u1.
+Numerous gamename updates, mostly to identify JAPAN sets from 0.130u1.
+
+
+3/7/2009 - 1875 Sets
+
+Added:
+GSLGR94J to Namco System 22 profile.  Requires fake parent as detailed below.
+HOOPS pinball to the Gottlieb System 3 profile.
+WORLDWAR to the Psycho Soldier profile.
+
+Changes:
+VBALL had rom changes in 0.129u6
+SPLATTER had rom changes in 0.129u6
+FINALAPR and SPEEDRCR were set up for the time being with a fake parent: "ROMOF="TEKKEN"
+This is due to MAME roms for the above using c75.bin and that M1 still hasn't been updated
+to use this file.  The "pr1data.8k" is still in tekken and will be required if you want
+these are any sets which are supposed to use c75.bin.
+
+
+2/20/2009 - 1872 Sets
+
+Added:
+SEGAWSKI to the Model 2A/2B/2C profile.
+
+
+2/19/2009 - 1871 Sets
+
+Changes:
+BATRIDER was renamed to BATRID in 0.129u4
+BBAKRAID was renamed to BKRAIDU in 0.129u4
+EXTRMATN had rom changes in 0.129u4
+NOBORANB was renamed to NOBB in 0.129u4
+
+
+1/7/2009 - 1871 Sets
+
+Added:
+MOTOXGO to the Namco System 12 profile.
+
+Changes:
+GURURIN had rom changes in 0.129
+
+
+11/26/2008 - 1870 Sets
+
+Added:
+ABURNER - Differs in some respects to ABURNER2 in that there are additional/changed sounds.
+AIRBUSB - Different sample roms from AIRBUSTR - not sure if sounds are 100% same.
+          Requires romof="airbustr".
+
+Changes:
+SOLDAMJ changed to SOLDAM in 0.128u4
+PBOBBLE2 changed to PBOBBL2O with a romof="pobble2" in 0.128u4
+AJAX had rom changes in 0.128u4
+
+region="" tag cleanup from some recent additions.
+
+
+11/03/2008 - 1868 Sets
+
+Changes:
+TNZSJ changed to TNZSJO in 0.128u1
+MAHRETSU has rom changes in 0.128u2
+KABUKIZ has a romof="tnzs" which wasn't needed
+
+
+10/05/2008 - 1868 Sets
+
+Changes:
+GP500 was changed to 500GP in 0.127u5
+CSCLUB, SONICWI2 had rom changes in 0.127u5
+
+Fixes for the Neo-Geo changes until proper undecrypted sound roms are emulated correctly.
+I've set up another fake parent, called "decrypt", which you can put all the decrypted roms
+that were taken out of MAME in 0.127u5 and u6 for the following sets:  jockeygp, kof2000,
+kof2001, kof2002, kof2003, matrim, mslug4, mslug5, pnyaa, rotd, samsho5, svcpcb
+Again, this will be replaced with the MAME roms as soon as a new M1 core is released that
+supports the undecrypted sounds roms.
+
+
+09/22/2008 - 1868 Sets
+
+Knurek made note of some XML corrections for a number of sets.  This update includes
+changes to:  g_acro, g_adiv, g_clay, g_ejim, g_ferias, g_ootw, g_pst3, g_rkni
+
+
+09/20/2008 - 1868 Sets
+
+Added:
+The new c75.bin implementation is not compatable with the way M1 produces sound.  For the
+time being, a fake parent has been set up for sets which have lost their "pr1data.8k" file
+in the MAME rom archives, which is "ROMOF="TEKKEN".  Assuming you have an updated MAME set,
+again, this should be rather seemless on your end.
+Involved sets:  gslgr94u, gslugrsj, machbrkr, nebulray, outfxies, ptblank, sws95, vshoot
+
+A misplaced genesis set was added:  g_chq2
+
+Removed:
+References to usage of the c69.bin in place of the c70.bin in many Namco sets is no longer
+needed.  If your MAME sets are updated to the latest developments (0.127u4), c70.bin is now
+available and in each games' archive.  This means all the "ROMOF="CGANGPZL" fake parent setup
+is no longer needed.  Involved sets:  emeralda, knckhead, numanath, quiztou, xday2
+
+Normal Gamename/Romname changes to match up with 0.127u4.
+
+
+09/05/2008 - 1867 Sets
+
+Added:
+A lot of Genesis titles (most which need a core update to work) from Knurek.  I added
+them now to simplify my ability to keep the list updated.  If a title doesn't work only
+after the next M1 core is released, you need to let R. Belmont know at his forum.
+http://www.bannister.org/forums/ubbthreads.php?ubb=postlist&Board=2
+
+Alpine Ski and Wild Western added to Taito SJ System profile. (Knurek)
+
+
+08/29/2008 - 1831 Sets
+
+Added:
+Numerous Genesis Titles from Knurek + R.Belmont - may too many to list.  The math
+seems to indicate over 150 titles have been added.
+
+Removed:
+Ray Force (clone of Gunlock) taken out of XML - no unique roms.
+
+Corrected:
+Sonic Wings 3 (sonicw3) - Region size was incorrect.
+
+NOTE:  There still may be a couple sets that do not play correctly.  The next M1
+core release should correct these problemed Genesis/Megadrive sets.
+
+
+08/05/2008 - 1675 Sets
+
+You need the latest release of M1 for today's list:
+http://rbelmont.mameworld.info/m1078a10-w32.zip
+This list is included in the this a10 release!
+
+Added:
+- X-Day 2 (xday2) using Namco NA-1/2 profile (Phil Bennett) - I added a ROMOF="CGANGPZL"
+to it as a fake parent to allow you to keep your MAME sets unmodified.
+
+- Titanic (Coin dropper) using Tattoo Assassins profile (Washu-Chan).
+
+- Numerous Genesis Titles from R. Belmont and Knurek!!
+3D Golf Simulation Harukanaru Augusta (g_new3dg)
+Advanced Daisenryaku - Deutsch Dengekisakusen (g_advdai)
+Air Buster (g_abus)
+Air Diver (g_adiv)
+Alex Kidd in the Enchanted Castle (g_alex)
+Altered Beast (g_abea)
+Arcus Odyssey (g_arcu)
+Crue Ball (g_crue)
+Devil's Course 3-D Golf (g_dc3d)
+Earnest Evens (g_earn)
+El Viento (g_elvi)
+Final Zone (g_fzon)
+Jungle Strike (g_jstr)
+Pebble Beach Golf Links (g_pbgl)
+Sol-Deace (g_sold)
+Thunder Force II (g_tf2)
+Thunder Force III (g_tf3)
+Thunder Force IV (g_tf4)
+Viewpoint (g_view)
+Virtua Fighter 2 (g_vf2)
+Waialae no Kiseki (g_waiala)
+World Heroes (g_wher)
+Zan - Yasha Enbukyoku / Zan Yasha Enbuden (g_zanya)
+Zoop (g_zoop)
+
+Fixed:
+Contra - Hard Corps (g_cont)'s Title.
+Tiny Toon Adventures - Buster's Hidden Treasure (g_tta)'s Title.
+
+
+08/04/2008 - 1649 Sets
+
+Added many sets based on latest M1 release (0.7.8a9) and recent posts at the M1 Forum.
+I also simplified all the names for all Genesis/Megadrive titles.
+Keep in mind, these adds will only work if you install the latest M1 version released!!
+
+Be sure to update your M1 Install available here:
+http://rbelmont.mameworld.info/m1078a9-w32.zip
+
+Then, download and apply the mini-update (.DLL):
+http://rbelmont.mameworld.info/out_of_timers.zip
+
+
+08/01/2008 - 1581 Sets
+
+Added:
+Rail Chase 2 (rchase2) under Model 2A/2B/2C profile from MAME 0.126u2 addition.  The music seems like it might
+be too fast, I'm not sure.  I couldn't find an OST for reference and it still doesn't work in MAME so it might
+require adjustment in the core to play correctly.
+
+Aaron Spelling 1.01 (pinball) (aar_101) under Tattoo Assassins profile.  It's tested and working correctly!
+
+Added another "fake parent" to allow you to hold all your .NV files for the sets in the Seibu SPI profile.
+You can place them all in a file called "seibunvs" and save having to repopulate your MAME romsets after an
+audit.
+
+
+07/20/2008 - 1579 Sets
+
+Added:
+Galactic Storm (galastrm) profile from Knurek.  Phil Bennett has the same thing in the new adds coming - I'm
+adding it now for people to listen to (Even if it's a bit buggy).
+
+Corrected:
+Wave Runner (waverunr) - Knurek provided a fix to allow Song 0 to be played.
+
+Virtua Fighter 2 (vf2) to use new rom released in MAME 0.126u1.
+
+Point Blank 2 - Namco 22 version (ptblnk2a) was suffering from the same problem as SCI/SCIJ in which a setting
+in CLRMAME didn't share the roms correctly with it's clones.
+
+
+07/13/2008 - 1578 Sets
+
+Corrected:
+joyjoy - loaded rom past end of region (was 131072, supposed to be 262144).  That was my mistake.
+
+maglord, ridhero - both sets had something wrong with the "CPU1" definition line.  It looked ok, but must have
+contained a hidden or non-standard character because all I did to fix it was retype that line for both sets and
+they load again.  EDIT:  I was 262114 instead of 262144 .. my eyes didn't see it.
+
+sci/scij - Following MAME's standard, the "romof=sci" should be added to reference the parent set.  CLRMAME
+mistakenly puts this one file, c09-10.42, into the scij set even though it's source is the same as the parent file,
+c09-14.42 - just a different name.  My split romset put the rom in the clone, so I didn't see that the parent should
+need to have possession of it.  This is a bug in CLRMAME when dealing with split sets with this particular case.
+
+Thanks Llama from Fujix's BBS for the heads-up on these issues.
+
+
+07/12/2008 - 1578 Sets
+
+Added:
+Wave Runner (waverunr) - submitted from Fujix's BBS (Llama)
+DJ Boy (djboyj) - Japanese version with different speech roms.
+Special Criminal Investigation (scij) - Japanese version with different speech roms.
+
+In order to assist those who use the 4 sets which require the non-MAME standard c69.bin file to be added with those
+sets - I added a ROMOF="CGANGPLZ" to 'steal' the rom from that set so your MAME rom structure can stay intact.
+If you made your own roms consisting of all the files in a separate folder, this should have no effect.
+
+
+07/08/2008 - 1575 Sets
+
+MAME 0.126 Title/romset name updates.  Virtua Fighter 3 (vf3) needed a rom change and subtype change in order to play.
+
+
+06/23/2008 - 1575 Sets
+
+MAME 0.125u6 Title/romset name updates.  No adds right now.
+
+
+06/14/2008 - 1575 Sets
+
+Changed Neo Geo roms to match MAME 0.125u5.  Specifically:  joyjoy, kof2001, kotm, lbowling, mutant, socbrawl
+Also, a few name/romset changes to existing sets again to match current MAME.
+
+
+06/01/2008 - 1575 Sets
+
+Added 2 Tetris sets (tetrist, tetrista) (Knurek)
+Added parent set for Viper Phase 1 (viprp1) (Brass).  I kept the current viprp1j set as well since the roms are differenet.
+Made corrections to dleague and enforce to correct assignment problems (Knurek)
+Name/romset changes to match MAME 0.125u3
+
+
+05/24/2008 - 1572 Sets
+
+Small name/romset name changes to match MAME 0.125u2
+
+
+05/07/2008 - 1572 Sets
+
+Misc romset name fixes (CPS1 mostly) and description changes to match MAME 0.125.
+
+
+04/25/2008 - 1572 Sets
+
+Due to me making mistakes in scanning my sets - a few changes in MAME never got carried over to M1 and resulted
+in missing roms (in M1) for most people with an updated MAME set.  Both of these are now 100% to current MAME.
+
+These include:
+fightfev - Fight Fever
+rbff2 - Real Bout Fatal Fury 2 - The Newcomers
+
+
+04/24/2008 - 1572 Sets
+
+Just some assorted rom name changes (1942, sidebs) and numerous other game name descriptions updated to
+latest MAME (0.124u4) defaults.
+
+
+04/08/2008 - 1572 Sets
+
+Corrected:
+Many changes to Neo-Geo in 0.124u1 which effect many sets, including:
+3countb, aof, bstars, bstars, fatfury1, fightfev, maglord, nam1975, rbff2, ridhero, roboarmy, superspy, tpgolf 
+
+If you do not update your romsets for MAME regularly, you really don't need this particular update.
+
+
+03/26/2008 - 1572 Sets
+
+Corrected:
+A few names to keep in sync with MAME changes (MAME 0.124a)
+
+
+02/27/2008 - 1572 Sets
+
+Corrected:
+ddragon3 set to keep up with MAME changes (MAME 0.123u2).
+
+Added:
+afv_l4 (Washu-Chan) under the DCS Driver based on post in forum.
+
+
+01/28/2008 - 1571 Sets
+
+Had to take g_izzy - Izzy's Quest for the Olympic Rings out of the XML for now - Mistakenly
+added by me and it doesn't work currently.
+
+Added groundfx - Ground Effects (Phil B), under the F3/Super Z/JC Systems driver.
+
+
+01/16/2008 - 1571 Sets
+
+Simple change to start track number to allow access to additional music without going back
+for qgakumon - Quiz Gakumon no Sasume - Knurek
+
+
+01/13/2008 - 1571 Sets
+
+For use with 0.7.8a6 Core update or later.
+Changed cuebrick to cuebrckj (MAME 0.122u5 set change)
+
+Added:
+kickoff - Kick Off (Knurek)
+hayaosi1 - Hayaoshi Quiz Ouza Ketteisen - The King Of Quiz (Knurek)
+
+Added currently playable GEMS Titles (under new Sega Genesis/MegaDrive profile).  These are
+preliminary adds and are subject to change/deletion.  There are still a number of sets that
+can be added and will be as soon as/if possible. (R. Belmont and Tafoid)
+
+
+01/08/2008 - 1445 Sets
+
+Added: Dangerous Curves (dangcurv) - Phil B
+
+
+01/02/2008 - 1444 Sets
+
+Added Phil's Hidden stash of M1 additions that didn't make the last core release:
+Drivers are: Super Monaco GP, Equites Sound Board, Night Slashers, Taito Sound Board '84,
+Metal Solder Isaac, and Round Up 5 to be precise. 
+
+
+01/01/2008 - 1427 Sets
+
+For use with 0.7.8a5 Core update or later.
+10 sets added with Core update for Namco NA-1!
+
+Buggy Boy changes in setname:  buggyb1 to buggybjr
+Tekken 2 change in rom to match 0.122u2
+
+
+12/22/2007 - 1417 Sets
+
+Lost sets and odd changes again have been re-integrated. (they were in the 11/20 release).  They
+'disappeared' when not carried into the last core release's XML.  I will endeavor to not let this
+happen again.  Thanks again to Knurek for keeping an eye on it.
+
+Re-added Sets:
+fitegolf
+titlef
+skysmash
+bombsa
+bloodbro
+
+Changes items in irrmaze and wboy to allow them to once again have more sound available.
+
+
+12/18/2007 - 1412 Sets
+Current version as of this update is V0.7.8a3.
+Latest Changes to keep M1 in line with MAME changes.
+
+These include:
+
+dfeveron - Dangun Feveron (Japan) CHANGED TO: feversos - Fever SOS as MAME has this set as parent now.
+
+3 different sets saw changes in MAME 0.122 due to Neo-Geo changes/updates:
+socbrawl
+sonicwi3
+superspy
+
+Some assorted title/company name changes to keep in line to MAME's output.
+
+
+12/16/2007 - 1412 Sets
+
+New M1 released on 12/09/2007 - New drivers and additions to XML will not all work with prior M1 versions.
+Current version as of this update is V0.7.8a3.
+
+
+11/20/2007 - 1383 Sets
+
+New M1 released on 11/11/2007 - New drivers and additions to XML will not all work with prior M1 versions.
+Current version as of this update is v0.7.8a2.
+
+This release includes all changes by R. Belmont + additions other forum members from this thread:
+http://www.bannister.org/forums/ubbthreads.php?ubb=showflat&Number=35618
+
+
+11/02/2007 - 1362 Sets
+
+Fixed some parameters on several games to allow for more audio to be heard - Knurek
+(ddtod, ecofghtr, 19xx, starglad, pacapp2, pacappsp)
+
+Fixed some bad text following a </region> tag in gunlock.
+
+Removed Sets:
+rmancp2j - Same sound set (rom for rom) as mmancp2u.
+
+Added Sets:
+totmejan - Tottemo E Jong using "Raiden" Profile.  New to MAME in 0.120u1 - MuramuraNight
+goodejan - Good E Jong using "Raiden" Profile.  New to MAME in 0.120u1 - MuramuraNight
+jetwave - Jet Wave using "System GX" Profile.  New to MAME in 0.120u2 - Knurek
+
+
+10/25/2007 - 1360 Sets
+
+Corrected all pinballs Titles/Company/Year data to what is stored in PINMAME's XML output.
+
+Fixed some parameters on 2 sets, allowing more music/voice to be heard, thanks to Knurek.
+(sfzch and cworld2j)
+
+New Set:
+terabrst - Teraburst using "Hornet" Profile.  New to MAME in 0.120u1.
+
+
+10/16/2007 - 1359 Sets
+
+Corrected Sets:
+bjourney, bstars, bstars2, goalx3, janshin, joyjoy, legendos, maglord, mutnat, nam1975, pbobblen, strhoop, tws96, viewpoin
+(Neo-Geo romset changes in MAME 0.120)
+
+Fixed title spacing for a number of title which had multiple spaces.
+
+
+10/14/2007 - 1359 Sets
+
+New/Added sets:
+btmn_103 - Batman (1.03) (pinball) - Initially left out for being buggy, but it plays many voices/sounds at least, so it was re-added.
+cavelon  - Cavelon using "Scramble / Super Cobra" Profile, Subtype "4".
+hayaosi2 - Hayaoshi Quiz Grand Champion Taikai (was hayaosi1) using "Jaleco Mega System 32" Profile.  New to MAME in 0.119u4.
+hayaosi3 - Hayaoshi Quiz Nettou Namahousou using "Jaleco Mega System 32" Profile.  New to MAME in 0.119u4.
+rescue   - Rescue using "Scramble / Super Cobra" Profile, Subtype "4".
+sfx	 - SF-X using "Scramble / Super Cobra" Profile, Subtype "4".
+tazmania - Tazz-Mania (Set 1) using "Scramble / Super Cobra" Profile, Subtype "4".
+wboy	 - Wonder Boy (set 1, 315-5177) using "Sega System 1/2" Profile.  SFX Only?
+wpksoc   - World PK Soccer using the "Irem M92" Profile, Subtype "9".
+
+Removed sets:
+hayaosi1 - Profile changed in MAME.  Romset hayaosi1 changed to hayaosi2.  Unable to add hayaosi1 with currently available Profiles.
+
+
+10/11/2007 - 1351 Sets
+
+Initial Update from official 0.7.4u4 M1.XML
